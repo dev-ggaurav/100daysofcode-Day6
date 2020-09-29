@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/* Globals */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pink:hsl(322, 100%, 66%);
+    --pale-cyan:hsl(193, 100%, 96%);
+    --dark-cyan:hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+}
+
+/* Components */
+
+button{
+    padding: 1rem 4rem;
+    margin: 3rem 0;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--pink);
+    font-family: Open sans,sans-serif;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cta{
+    padding: 0.3rem 2rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    color: #000;
+    box-shadow:
+    0 1px 24px rgba(0, 0, 0, 0.13);
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: open sans,sans-serif;
+    cursor: pointer;
+}
+
+.card{
+    text-align: center;
+    margin:3rem 1rem;
+    padding:4rem 1.2rem;
+    box-shadow:
+    0 1px 24px rgba(0, 0, 0, 0.13);
+    border-radius: 0.5rem;
+}
+
+.logo{
+    width: 6rem;
+}
+
+main{
+    text-align: center;
+    background-color: var(--pale-cyan);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    width: 6rem;
+    height: 1rem;
+}
+
+.hero{
+    background-image: url(/images/bg-hero-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding:4rem 2rem;
+}
+
+h1{
+    font-family: poppins,sans-serif;
+    color: var(--dark-cyan);
+}
+
+.hero p{
+    font-family: open sans,sans-serif;
+    padding-top: 2rem;
+    line-height: 1.8rem;
+    color: var(--dark-cyan);
+}
+
+.card h2{
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-family: poppins;
+    color: var(--dark-cyan);
+}
+
+.card p{
+    font-family: open sans;
+    color: var(--grayish-blue);
+    line-height: 1.5rem;
+    color: var(--dark-cyan);
+}
+
+.cta-card{
+    text-align: center;
+    max-width: 40rem;
+    box-shadow:
+    0 1px 24px rgba(0, 0, 0, 0.13);
+    padding:0 0.5rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    padding-top: 2rem;
+}
+
+.cta-card h4{
+    font-family: poppins,sans-serif;
+    color: var(--dark-cyan);
+}
+
+footer{
+    background-color: var(--dark-cyan);
+    padding: 10rem 1rem;
+    color: #fff;
+    font-family: open sans,sans serif;
+}
+
+.footer-logo{
+    width: 12rem;
+    padding-bottom: 2rem;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.blurb{
+    display: flex;
+}
+
+.blurb p{
+    margin-left: 1rem;
+    padding-bottom: 3.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-links{
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.social-links{
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+i{
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    padding: 5rem 0;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ .copyright{
+     font-size: 0.8rem;
+     margin-top: 3rem;
+     text-align: center;
+ }
+
+
+ @media only screen and (min-width: 1200px) {
+    
+    header{
+        padding: 3rem;
+    }
+
+    .logo{
+        width: 8rem;
+        height: 2rem;
+    }
+
+    .cta{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:5rem;
+        text-align: left;
+        background-image: url(/images/bg-hero-desktop.svg);
+    }
+
+    .hero-txt{
+        padding-top: 3rem;
+        max-width: 50vw;
+        padding-right: 5rem;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+
+    .hero p{
+        font-size: 1.2rem;
+    }
+
+    .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem 12rem;
+        padding: 0; 
+    }
+
+    .card img{
+        padding:5rem;
+    }
+
+    .card-txt{
+        padding: 5rem;
+    }
+
+    .grow{
+        flex-direction: row-reverse;
+        
+    }
+
+    .users{
+        flex-direction: row-reverse;
+    }
+
+    .cta-card{
+        margin: 0 auto;
+    }
+
+
+    footer{
+        padding:5rem 8rem;
+    }
+
+    .foot-flex{
+        display: flex;
+        align-items: center;
+    }
+    .foot-flex > *{
+        flex: 1;
+    }
+
+    .footer-links{
+        margin-left: 5rem;
+    }
+
+    .align-start{
+        align-items: flex-start;
+    }
+
+  }
